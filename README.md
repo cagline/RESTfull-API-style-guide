@@ -115,7 +115,7 @@ api.cricket.restapi.org/leagues
 api.cricket.restapi.org/leagues/ipl/teams
 api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players 
 ```
-### HTTP request method summary
+### Example for Document & Collection
 
 | HTTP  Method | URL design | Description | HTTP response code |
 | ------ | ------ | ------ |------ |
@@ -128,19 +128,10 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 | **PUT** | **api.bank.lk/v1/banks/{id}** | **Update one resource** |
 | **DELETE** | **api.bank.lk/v1/banks/{id}** | **Delete the one document** |
 
-### HTTP request method summary
-
-| HTTP  Method | Semantics |
-| ------ | ------ |
-| DELETE  | HTTP request method used to remove its parent.|
-| GET  | HTTP request method used to retrieve a representation of a resource’s state.|
-| HEAD  | HTTP request method used to retrieve the metadata associated with the resource’s state.|
-| OPTIONS  | HTTP request method used to retrieve metadata that describes a resource’s available interactions.|
-| POST  | HTTP request method used to create a new resource within a collection or execute a controller.|
-| PUT  | HTTP request method used to insert a new resource into a store or update a mutable resource.|
 
 
-## Recap
+
+## Recap for Document & Collection
 
 | HTTP  Method | **/customers** |  **/customers/{id}**
 | ------ | ------ | ------ |
@@ -151,7 +142,16 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 
 
 
+### HTTP request method summary
 
+| HTTP  Method | Semantics |
+| ------ | ------ |
+| DELETE  | HTTP request method used to remove its parent.|
+| GET  | HTTP request method used to retrieve a representation of a resource’s state.|
+| HEAD  | HTTP request method used to retrieve the metadata associated with the resource’s state.|
+| OPTIONS  | HTTP request method used to retrieve metadata that describes a resource’s available interactions.|
+| POST  | HTTP request method used to create a new resource within a collection or execute a controller.|
+| PUT  | HTTP request method used to insert a new resource into a store or update a mutable resource.|
 
 
 
