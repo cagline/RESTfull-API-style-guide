@@ -115,17 +115,32 @@ api.cricket.restapi.org/leagues
 api.cricket.restapi.org/leagues/ipl/teams
 api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players 
 ```
+### HTTP request method summary
+
+| HTTP  Method | URL design | Description | HTTP response code |
+| ------ | ------ | ------ |------ |
+| **GET** | **api.bank.lk/v1/banks** | **Get list of collection** |
+| **POST** | **api.bank.lk/v1/banks** | **Create a document** ***(bank)*** |
+| PUT | api.bank.lk/v1/banks |  Update/replace entire collection *(not often desirable)* |
+| DELETE | api.bank.lk/v1/banks | **Delete the whole collection *(not often desirable)* |
+| **GET** | **api.bank.lk/v1/banks/{id}** | **Get one document** |
+| POST | api.bank.lk/v1/banks | N/A |
+| **PUT** | **api.bank.lk/v1/banks/{id}** | **Update one resource** |
+| **DELETE** | **api.bank.lk/v1/banks/{id}** | **Delete the one document** |
+
+### HTTP request method summary
+
+| HTTP  Method | Semantics |
+| ------ | ------ |
+| DELETE  | HTTP request method used to remove its parent.|
+| GET  | HTTP request method used to retrieve a representation of a resource’s state.|
+| HEAD  | HTTP request method used to retrieve the metadata associated with the resource’s state.|
+| OPTIONS  | HTTP request method used to retrieve metadata that describes a resource’s available interactions.|
+| POST  | HTTP request method used to create a new resource within a collection or execute a controller.|
+| PUT  | HTTP request method used to insert a new resource into a store or update a mutable resource.|
 
 
-```sh
-GET api/v1/banks
-POST api/v1/banks
-GET api/v1/banks/{id}
-PUT api/v1/banks/{id}
-GET api/v1/banks/{id}/accounts/
-GET api/v1/banks/{id}/accounts/{id} or 
-GET api/v1/banks/{id}/accounts/chanuka-asanka
-```
+## Recap
 
 | HTTP  Method | **/customers** |  **/customers/{id}**
 | ------ | ------ | ------ |
