@@ -153,8 +153,38 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 | POST  | HTTP request method used to create a new resource within a collection or execute a controller.|
 | PUT  | HTTP request method used to insert a new resource into a store or update a mutable resource.|
 
- 
-
+ # Wrapped Responses
+ ```sh
+ {
+   "code": 200,
+   "status": "success", 
+   "total": 50,
+   "per_page": 15,
+   "current_page": 1,
+   "last_page": 4,
+   "next_page_url": "http://laravel.app?page=2",
+   "prev_page_url": null,
+   "from": 1,
+   "to": 15,
+   "data":[
+        {
+            "id":3,
+            "name":".Net Core",
+            "created_at":"2017-04-25 12:23:04",
+            "updated_at":"2017-04-25 12:23:04"
+        },
+        {...},
+        {...}
+   ]
+}
+ ```
+ ```sh
+ {
+   "code": 401,
+   "status": "error", 
+   "message": "token is invalid",
+}
+ ``` 
 # Hypermedia as the engine of application state (HATEOAS)
 ### Github API Examaple
 Request
