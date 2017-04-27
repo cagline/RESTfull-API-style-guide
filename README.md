@@ -115,7 +115,7 @@ api.cricket.restapi.org/leagues
 api.cricket.restapi.org/leagues/ipl/teams
 api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players 
 ```
-### Example for Document & Collection
+## Example for Document & Collection
 
 | HTTP  Method | URL design | Description | HTTP response code |
 | ------ | ------ | ------ |------ |
@@ -142,7 +142,7 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 
 
 
-### HTTP request method summary
+## HTTP request method summary
 
 | HTTP  Method | Semantics |
 | ------ | ------ |
@@ -153,16 +153,7 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 | POST  | HTTP request method used to create a new resource within a collection or execute a controller.|
 | PUT  | HTTP request method used to insert a new resource into a store or update a mutable resource.|
 
-
-
-
-
-
-
-
-
-
-
+ 
 
 # Hypermedia as the engine of application state (HATEOAS)
 ### Github API Examaple
