@@ -82,7 +82,9 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians
 ```
 indicates that each of these URIs should also identify an addressable resource: 
 ```sh
-http://api.cricket.restapi.org/leagues/ipl/teams http://api.soccer.restapi.org/leagues/ipl http://api.soccer.restapi.org/leagues 
+http://api.cricket.restapi.org/leagues/ipl/teams 
+http://api.soccer.restapi.org/leagues/ipl 
+http://api.soccer.restapi.org/leagues 
 http://api.soccer.restapi.org 
 ```
 Resource modeling is an exercise that establishes your API’s key concepts. This process is similar to the data modeling for a relational database schema or the classical modeling of an object-oriented system.
@@ -112,6 +114,17 @@ Each URI below identifies a collection resource:
 api.cricket.restapi.org/leagues
 api.cricket.restapi.org/leagues/ipl/teams
 api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players 
+```
+
+
+```sh
+GET api/v1/banks
+POST api/v1/banks
+GET api/v1/banks/{id}
+PUT api/v1/banks/{id}
+GET api/v1/banks/{id}/accounts/
+GET api/v1/banks/{id}/accounts/{id} or 
+GET api/v1/banks/{id}/accounts/chanuka-asanka
 ```
 
 | HTTP  Method | **/customers** |  **/customers/{id}**
