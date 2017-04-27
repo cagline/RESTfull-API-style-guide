@@ -156,7 +156,6 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
  # Wrapped Responses
  ```sh
  {
-   "code": 200,
    "status": "success", 
    "total": 50,
    "per_page": 15,
@@ -180,7 +179,6 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
  ```
  ```sh
  {
-   "code": 401,
    "status": "error", 
    "message": "token is invalid",
 }
