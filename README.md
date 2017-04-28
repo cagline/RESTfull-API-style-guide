@@ -115,7 +115,7 @@ api.cricket.restapi.org/leagues
 api.cricket.restapi.org/leagues/ipl/teams
 api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players 
 ```
-## Example for Document & Collection
+### Example for Document & Collection
 
 | HTTP  Method | URL design | Description | HTTP response code |
 | ------ | ------ | ------ |------ |
@@ -131,7 +131,7 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 
 
 
-## Recap for Document & Collection
+### Recap for Document & Collection
 
 | HTTP  Method | **/customers** |  **/customers/{id}**
 | ------ | ------ | ------ |
@@ -140,7 +140,14 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 | PUT | 404 (Not Found), unless you want to update/replace every resource in the entire collection.  | 200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid.|
 | DELETE | 404 (Not Found), unless you want to delete the whole collection—not often desirable. | 200 (OK). 404 (Not Found), if ID not found or invalid. | 
 
+## Store
 
+A store is a client-managed resource repository. A store resource lets an API client put resources in, get them back out, and decide when to delete them. On their own, stores do not create new resources; therefore a store never generates new URIs. Instead, each stored resource has a URI that was chosen by a client when it was initially put into the store.
+The example interaction below shows a user (with ID 1234) of a client program using a fictional Soccer REST API to insert a document resource named alonso in his or her store of favorites:
+
+```sh 
+PUT /users/1234/favorites/alonso
+```
 
 ## HTTP request method summary
 
