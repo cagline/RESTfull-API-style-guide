@@ -124,7 +124,7 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 | PUT | api.bank.lk/v1/banks |  Update/replace entire collection *(not often desirable)* |
 | DELETE | api.bank.lk/v1/banks | **Delete the whole collection *(not often desirable)* |
 | **GET** | **api.bank.lk/v1/banks/{id}** | **Get one document** |
-| POST | api.bank.lk/v1/banks | N/A |
+| POST | api.bank.lk/v1/banks/{id} | N/A |
 | **PUT** | **api.bank.lk/v1/banks/{id}** | **Update one resource** |
 | **DELETE** | **api.bank.lk/v1/banks/{id}** | **Delete the one document** |
 
