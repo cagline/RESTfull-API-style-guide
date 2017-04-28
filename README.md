@@ -128,9 +128,6 @@ api.cricket.restapi.org/leagues/ipl/teams/mumbai-indians/players
 | **PUT** | **api.bank.lk/v1/banks/{id}** | **Update one resource** |
 | **DELETE** | **api.bank.lk/v1/banks/{id}** | **Delete the one document** |
 
-
-
-
 ### Recap for Document & Collection
 
 | HTTP  Method | **/customers** |  **/customers/{id}**
