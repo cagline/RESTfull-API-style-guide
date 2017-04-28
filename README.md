@@ -149,6 +149,18 @@ The example interaction below shows a user (with ID 1234) of a client program us
 PUT /users/1234/favorites/alonso
 ```
 
+## Controller
+
+A controller resource models a procedural concept. Controller resources are like executable functions, with parameters and return values; inputs and outputs. Like a traditional web application’s use of HTML forms, a REST API relies on controller resources to perform application-specific actions that cannot be logically mapped to one of the standard methods (create, retrieve, update, and delete, also known as CRUD)
+
+Controller names typically appear as the last segment in a URI path, with no child
+resources to follow them in the hierarchy. The example below shows a controller resource
+that allows a client to resend an alert to a user:
+
+```sh 
+POST /alerts/245743/resend
+```
+
 ## HTTP request method summary
 
 | HTTP  Method | Semantics |
